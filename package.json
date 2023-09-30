@@ -5,7 +5,9 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"build-css": "node-sass src/main.scss src/main.css",
+		"watch-css": "npm run build-css && node-sass src/main.scss src/main.css --watch"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
@@ -15,6 +17,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"ethers": "^6.7.1"
+		"bulma": "^0.9.4",
+		"ethers": "^6.7.1",
+		"node-sass": "^9.0.0"
 	}
 }

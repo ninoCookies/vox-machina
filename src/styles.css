@@ -1,0 +1,63 @@
+
+#main-nav{
+    margin-bottom:20px;
+}
+
+
+.cover h1{
+    text-align: center;
+    z-index: 999;
+    font-size:50px;
+    color: red;
+}
+.cover{
+    background-image: url('./images/cover.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:50px 0;
+}
+
+
+.record {
+    animation: rotate 1.8s linear infinite;
+    animation-play-state: paused;
+    position: relative;
+    width:200px;
+    height:200px;
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.record.active {
+    animation: rotate 1.8s linear infinite;
+}
+
+
+.play-button{
+ width:50px;
+ height:50px;
+ background:none;
+ border:none;
+}
+
+
+.player-container{
+  background-color: #fff;
+}
+
+footer{
+  margin-top:100px;
+}
+
+#nfts{
+  margin:50px 0;
+}
+
